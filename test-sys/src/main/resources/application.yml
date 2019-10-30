@@ -1,0 +1,23 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /test-sys
+    
+spring:  application:    name: test-sys
+  dubbo:
+    application:
+      id: sys-center-dubbo-prodiver
+      name: sys-center-dubbo-prodiver
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    server: true
+    protocol:
+      name: dubbo
+      port: 20880
+    
+#eureka配置
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://127.0.0.1:9000/eureka/
+      

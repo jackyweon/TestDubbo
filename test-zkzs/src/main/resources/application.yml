@@ -1,0 +1,14 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /test-zkzs
+    
+spring:
+  application:
+    name: test-zkzs
+    
+#eureka配置
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://127.0.0.1:9000/eureka/
