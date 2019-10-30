@@ -1,5 +1,7 @@
 package com.sctele.test.sys.domain;
 
+import java.io.Serializable;
+
 /**
  * 
  *
@@ -8,7 +10,9 @@ package com.sctele.test.sys.domain;
  * @author wenlei
  * @date 2019年10月29日
  */
-public class User {
+public class User implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private Long id;
 

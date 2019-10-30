@@ -20,10 +20,10 @@
 			<artifactId>test-common</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.sctele</groupId>
 			<artifactId>test-feign</artifactId>
-		</dependency>
+		</dependency> -->
 
 		<!-- dubbo -->
 		<dependency>

@@ -22,6 +22,15 @@ public class TaskController {
 	@Autowired
 	TaskService taskService;
 
+	/**
+	 * http://127.0.0.1:9002/test-zkzs/task/getTaskById?task=5
+	 * 		
+	 * @title: getTaskById
+	 * @author wenlei
+	 * @data: 2019年10月30日
+	 * @param taskId
+	 * @return
+	 */
 	@GetMapping("task/getTaskById")
 	public Task getTaskById(@RequestParam("task") Long taskId) {
 		return taskService.getTaskById(taskId);
